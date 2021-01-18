@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 //hardcode, url
 
-@FeignClient(name = "hr-worker", url = "localhost:8001", path = "/workers")
+@FeignClient(name = "hr-worker", path = "/workers")
 public interface WorkerFeignClient {
 
     //mesma assinatura do metodo a ser chamado
