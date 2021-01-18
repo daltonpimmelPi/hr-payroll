@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 //hardcode, url
 
+//somente o nome do microservice, o eureka se encarrega de onde saber aonde esta rodando esse serviço
+//não precisa da localização no serviço hr-worker
+
 @FeignClient(name = "hr-worker", path = "/workers")
 public interface WorkerFeignClient {
 
